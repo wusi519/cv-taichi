@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"main.js":[function(require,module,exports) {
 var html = document.querySelector("#html");
 var style = document.querySelector("#style");
-var string = "\n/*\u4F60\u597D\u6211\u53EB\u5C0F\u5F90\n\u6211\u662F\u4E00\u540D\u524D\u7AEF\u5DE5\u7A0B\u5E08\n\u63A5\u4E0B\u6765\u6211\u8981\u7ED9\u6211\u7684\u5B57\u4F53\u52A0\u6837\u5F0F\u4E86-\u5B57\u4F53\u53D8\u5927*/\nbody{\n  font-size:18px;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8981\u6F14\u793A\u4E00\u4E0B\u5982\u4F55\u753B\u4E00\u4E2A\u592A\u6781\n*\u9996\u5148\u6211\u8981\u51C6\u5907\u4E00\u4E2Adiv\n*/\n#div1{\n  width:200px;\n  height:200px;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8981\u6F14\u793A\u4E00\u4E0B\u5982\u4F55\u753B\u4E00\u4E2A\u592A\u6781\n*\u9996\u5148\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706*/\n\n#div1{\n  border-radius: 50%;\n  box-shadow:0 0 3px rgba(0,0,0,0.5)\n  border:none;\n}\n/*\u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n*\u4E00\u9ED1\u4E00\u767D*/\n#div1{\n  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);\n}\n/*\u63A5\u7740\u52A0\u4E24\u4E2A\u5C0F\u5706\u7403*/\n#div1::before {\n  width:100px;\n  height:100px;\n  border-radius: 50%;\n  top:0;\n  left:50%;\n  transform:translateX(-50%);\n  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n }\n#div1::after {\n  width:100px;\n  height:100px;\n  border-radius: 50%;\n  bottom:0;\n  left:50%;\n  transform:translateX(-50%);\n  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n }\n";
+var string = "\n/*\u4F60\u597D\u6211\u53EB\u5C0F\u5F90\n\u6211\u662F\u4E00\u540D\u524D\u7AEF\u5DE5\u7A0B\u5E08\n\u63A5\u4E0B\u6765\u6211\u8981\u7ED9\u6211\u7684\u5B57\u4F53\u52A0\u6837\u5F0F\u4E86-\u5B57\u4F53\u53D8\u8272*/\nbody{\n  color:#4822DD;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8981\u6F14\u793A\u4E00\u4E0B\u5982\u4F55\u753B\u4E00\u4E2A\u592A\u6781\n*\u9996\u5148\u6211\u8981\u51C6\u5907\u4E00\u4E2Adiv\n*/\n#div1{\n  width:200px;\n  height:200px;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8981\u6F14\u793A\u4E00\u4E0B\u5982\u4F55\u753B\u4E00\u4E2A\u592A\u6781\n*\u9996\u5148\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706*/\n\n#div1{\n  border-radius: 50%;\n  box-shadow:0 0 3px rgba(0,0,0,0.5)\n  border:none;\n}\n/*\u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n*\u4E00\u9ED1\u4E00\u767D*/\n#div1{\n  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);\n}\n/*\u63A5\u7740\u52A0\u4E24\u4E2A\u5C0F\u5706\u7403*/\n#div1::before {\n  width:100px;\n  height:100px;\n  border-radius: 50%;\n  top:0;\n  left:50%;\n  transform:translateX(-50%);\n  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n }\n#div1::after {\n  width:100px;\n  height:100px;\n  border-radius: 50%;\n  bottom:0;\n  left:50%;\n  transform:translateX(-50%);\n  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n }\n";
 var string2 = "";
 var n = 0;
 html.innerHTML = string2;
@@ -146,7 +146,7 @@ var step = function step() {
       n += 1;
       step();
     }
-  }, 10);
+  }, 50);
 };
 
 step();
@@ -178,7 +178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10534" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14683" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

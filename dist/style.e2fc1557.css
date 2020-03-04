@@ -1,2 +1,0 @@
-.screen1{float:left;width:50vw}.screen2{margin-left:50vw;position:fixed;top:10px;left:25%;transform:translateX(-25%)}.wrapper{position:relative}#div1:after,#div1:before{content:"";position:absolute}#html{word-break:break-all}@media (max-width:1000px){.screen1{float:none}.screen2{position:relative;left:0;top:10%}#html,.screen2{width:100vw;height:50vh}#html{overflow:auto}.wrapper{position:absolute;left:25%;top:10%;transform:translateX(-50%)}#div1:after,#div1:before{content:""}#html{word-break:break-all}}
-/*# sourceMappingURL=style.e2fc1557.css.map */
