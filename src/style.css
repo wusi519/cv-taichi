@@ -1,0 +1,61 @@
+.screen1 {
+  float: left;
+  width: 50vw;
+}
+.screen2 {
+  margin-left: 50vw;
+  position: fixed;
+  top: 10px;
+  left: 25%;
+  transform: translateX(-25%);
+}
+.wrapper {
+  position: relative;
+}
+#div1::before {
+  content: "";
+  position: absolute;
+}
+#div1::after {
+  content: "";
+  position: absolute;
+}
+#html {
+  word-break: break-all;
+}
+@media (max-width: 1000px) {
+  .screen1 {
+    float: none;
+  }
+  .screen2 {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    left: 0%;
+    top: 10%;
+  }
+  #html {
+    border: 1px solid black;
+    width: 100vw;
+    height: 50vh;
+    overflow: auto;
+  }
+  .wrapper {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+  #div {
+  }
+  #div1::before {
+    content: "";
+  }
+  #div1::after {
+    content: "";
+  }
+
+  #html {
+    word-break: break-all;
+  }
+}
