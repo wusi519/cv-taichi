@@ -1,10 +1,11 @@
 # cv-taichi
-每次改完代码必须先
+
+每次改完代码必须先运行这一行才能请求正确的JS,CSS
+```
+parcel build src/index.html --public-url .
+```
+之后再
 ```
 git pull
 git push
-```
-再运行这一行才能请求正确的JS,CSS
-```
-parcel build src/index.html --public-url .
 ```
