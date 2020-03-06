@@ -3,9 +3,10 @@ let style = document.querySelector("#style")
 let string = `
 /*你好我叫小徐
 我是一名前端工程师
-接下来我要给我的字体加样式了-字体变色*/
+接下来我要给我的网页加样式了*/
 body{
   color:#4822DD;
+  background-color:#eee;
 }
 /*接下来我要演示一下如何画一个太极
 *首先我要准备一个div
