@@ -1,6 +1,6 @@
 # cv-taichi
 
-每次改完代码必须先运行这一行才能请求正确的JS,CSS
+每次改完代码先运行这一行才能请求正确的JS,CSS
 ```
 parcel build src/index.html --public-url .
 ```
